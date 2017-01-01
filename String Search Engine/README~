@@ -1,0 +1,118 @@
+COMP 15 PROJECT 2
+Name: Haomin Feng (hfeng03)
+Date: November 27 2016
+Acknowledgement: None
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~THIS IS A README FILE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Purpose of the program:
+    This program is to index and search a file tree for strings. It traverses a 
+    file tree created using a module that is provided, anf then indexes each 
+    file that it finds in the tree. After indexing all of the files, it enters a
+    command loop to modify the search, and to quit the program.
+
+Files Provided:
+    gerp.cpp
+        This is the main() of the program, which coordinates all the different 
+        Classes and functions.
+    FSTraversal.cpp
+        This includes the functions that are used to traverse a file tree and 
+        read in and store the data from the file in two hash tables.
+    FSTraversal.h
+        The function declaration of the FSTraversal.cpp,
+    ReadFile.cpp
+        This is the implementation of the ReadFile Class. This Class is used to 
+        open a file and then read in lines and parse the lines into single
+        words, and finally store them into two hash tables in a Hashing Class.
+    ReadFile.cpp
+        The header file of the ReadFile Class.
+    Hashing.cpp
+        This is the implementation of the Hashing Class. This Class is used to
+        index either a word or a file into a hash table. It includes two hash 
+        tables, one for storing Word Structs, and the other for storing File
+        Structs.
+    Hashing.h
+        The header file of the Hashing.cpp. It includes the declaration of the 
+        Hashing Class and two Structs.
+    Search.cpp
+        This is the implementation of the Search Class. This Class is used to 
+        search a specific word in the hash tables, and then print out the 
+        info of the word.
+    Search.h
+        The header file of the Search Class.
+    FSTree.o, FSTree.h, DirNode.o, DirNode.h
+        Provided by Mark Sheldon 
+
+How to compile and run:
+    Type "make" to compile
+    Program will be started from the command line like this:
+    ./gerp DirectoryToIndex
+    Once the program indexes the specified directory it will print "Query? " 
+    and wait for a command from the user. 
+
+Architectural Overview:
+    FSTraversal.cpp takes an instance of the ReadFile Class to open a file and 
+    index its content.
+    ReadFile Class takes a pointer to the Hashing Class to index and store the
+    data in the Hashing Class's hash tables.
+    Search Class takes a pointer to the Hashing Class to find the data stored in
+    the hash tables of the Hashing Class.
+    FSTree implementation keeps a pointer to the the root DirNode.
+
+Data Structures and Algorithms:
+    Hash Table and STL vectors are the main data structures in this program.
+    Chaining was used to create the hash tables. It is fast and simple to index 
+    a data by using a hash table. 
+    This program has two main parts, which are traversing the tree and storing
+    the data, and searching the data.
+
+    1)First, traverse the file tree and find each file with the module provided.
+    After it finds a file, open the file by using an instance of the ReadFile 
+    Class. The ReadFile Class will open the file, read the content line by line.
+    Everytime it reads one line, store that line into the array of lines in a 
+    File Struct. And then parse the line into words, hash each word by using the
+    Hashing Class, create a Word Struct for each word, and store the Word Struct
+    into a hash table for words. After finishing reading all the file content, 
+    store the File Sturct into another hash table for files by using the Hashing
+    Class.
+
+    2)Then, after finishing indexing all the files and data. It's time to search
+    a specific word and its related file in the hash tables. For sensitive 
+    search, we take the hash value of the query to find the index of the buckets
+    and then traverse the chain of that bucket to find the mathing words (O(n)).
+    Then use the matched Word Struct to fins the position of the File struct.
+    For insensitive search, first we convert the word into lower case, and then 
+    convert the value in each bucket to lower case as well when traversing, if 
+    two lower case values match each other, print out the result.
+    * Note that to cater for insensitive case, when indexing the words, we 
+    convert all the words in lower case, so it and its lower case equivalent can
+    have the same index number, thus making the search easier.
+
+    * Hash Tables are made by a 2D vectors.
+    vector< vector<Word> > and vector< vector<File> >
+    (Word and File are both Structs)
+
+Testing:
+    I finished the Hashing Class first, so I firstly tested the indexing and 
+    storing of a word. I printed out all the data inside the vectors to see if 
+    the results were right.
+    Then I tested ReadFile Class to see if it could successfully read in a file 
+    and then store data into the Hasing Class.
+    Afer I finished the Search Class, I tested the whole program to see
+    1) if it can find all the paths of a random word in both sensitive and 
+    insensitive cases
+    2) if only one line is printed when the same word appears more than one time
+    in one line (both sensitive and insensitive cases)
+    3) if it will print out word not found when there is no match in the hash 
+    table
+    4) if it can quit the program properly
+    5) if it can handle large data sets
+    6) if it can end the program when it reaches the end of the cin.
+   
+Things to improve:
+    1) Store the File Struct in a vector, and store the index of the File in 
+    the Word Struct, instead of storing File Struct in a hash table. When we
+    know the index of the File in the vector, search time will be constant.
+    2) Expand the hash table, so when it gets more data, the chaining wont be 
+    long.
+******************************************************************************* 
