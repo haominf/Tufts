@@ -1,2 +1,4 @@
-# Tufts
-# Tufts compsci classes and coursework
+# Tufts University
+# Computer Science Coursework
+# COMP 11
+# COMP 15
