@@ -1,0 +1,32 @@
+<Order(0) arrival_timestamp = 0 fetch_duration = 10 pack_duration = 12 total_time = 22>
+<Order(2) arrival_timestamp = 2 fetch_duration = 10 pack_duration = 30 total_time = 58>
+<Order(1) arrival_timestamp = 1 fetch_duration = 10 pack_duration = 40 total_time = 59>
+<Order(3) arrival_timestamp = 3 fetch_duration = 10 pack_duration = 20 total_time = 57>
+<Order(7) arrival_timestamp = 7 fetch_duration = 1 pack_duration = 8 total_time = 61>
+<Order(5) arrival_timestamp = 5 fetch_duration = 1 pack_duration = 10 total_time = 65>
+<Order(6) arrival_timestamp = 6 fetch_duration = 1 pack_duration = 5 total_time = 69>
+<Order(10) arrival_timestamp = 10 fetch_duration = 1 pack_duration = 8 total_time = 66>
+<Order(4) arrival_timestamp = 4 fetch_duration = 1 pack_duration = 20 total_time = 76>
+<Order(9) arrival_timestamp = 9 fetch_duration = 1 pack_duration = 8 total_time = 74>
+<Order(12) arrival_timestamp = 12 fetch_duration = 27 pack_duration = 1 total_time = 72>
+<Order(8) arrival_timestamp = 8 fetch_duration = 1 pack_duration = 8 total_time = 80>
+<Order(11) arrival_timestamp = 11 fetch_duration = 1 pack_duration = 2 total_time = 79>
+<Order(14) arrival_timestamp = 14 fetch_duration = 1 pack_duration = 10 total_time = 80>
+<Order(13) arrival_timestamp = 13 fetch_duration = 1 pack_duration = 20 total_time = 83>
+<Order(17) arrival_timestamp = 17 fetch_duration = 1 pack_duration = 8 total_time = 81>
+<Order(15) arrival_timestamp = 15 fetch_duration = 1 pack_duration = 5 total_time = 84>
+<Order(16) arrival_timestamp = 16 fetch_duration = 1 pack_duration = 8 total_time = 88>
+<Order(18) arrival_timestamp = 18 fetch_duration = 1 pack_duration = 8 total_time = 88>
+<Order(19) arrival_timestamp = 19 fetch_duration = 1 pack_duration = 8 total_time = 88>
+<Order(20) arrival_timestamp = 20 fetch_duration = 27 pack_duration = 1 total_time = 90>
+<Order(23) arrival_timestamp = 23 fetch_duration = 1 pack_duration = 5 total_time = 94>
+<Order(22) arrival_timestamp = 22 fetch_duration = 1 pack_duration = 10 total_time = 99>
+<Order(24) arrival_timestamp = 24 fetch_duration = 1 pack_duration = 8 total_time = 101>
+<Order(25) arrival_timestamp = 25 fetch_duration = 1 pack_duration = 8 total_time = 104>
+<Order(21) arrival_timestamp = 21 fetch_duration = 1 pack_duration = 20 total_time = 109>
+<Order(26) arrival_timestamp = 26 fetch_duration = 1 pack_duration = 8 total_time = 107>
+<Order(27) arrival_timestamp = 27 fetch_duration = 1 pack_duration = 8 total_time = 110>
+min elapsed time 22 minutes
+max elapsed time 110 minutes
+mean elapsed time 80 minutes
+28 orders processed

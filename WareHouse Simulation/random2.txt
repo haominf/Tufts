@@ -1,0 +1,89 @@
+Order 1  arrived at time 1
+fetch time 10 minutes, pack time 40 minutes
+
+Order 2  arrived at time 2
+fetch time 10 minutes, pack time 30 minutes
+
+Order 3  arrived at time 3
+fetch time 10 minutes, pack time 20 minutes
+
+Order 4  arrived at time 4
+fetch time 1 minutes, pack time 20 minutes
+
+Order 5  arrived at time 5
+fetch time 1 minutes, pack time 10 minutes
+
+Order 6  arrived at time 6
+fetch time 1 minutes, pack time 5 minutes
+
+Order 7  arrived at time 7
+fetch time 1 minutes, pack time 21 minutes
+
+Order 8  arrived at time 8
+fetch time 1 minutes, pack time 21 minutes
+
+Order 9  arrived at time 9
+fetch time 1 minutes, pack time 21 minutes
+
+Order 10  arrived at time 10
+fetch time 1 minutes, pack time 21 minutes
+
+Order 11  arrived at time 12
+fetch time 2 minutes, pack time 18 minutes
+
+Order 12  arrived at time 15
+fetch time 2 minutes, pack time 10 minutes
+
+Order 13  arrived at time 17
+fetch time 2 minutes, pack time 4 minutes
+
+Order 14  arrived at time 21
+fetch time 1 minutes, pack time 14 minutes
+
+Order 15  arrived at time 22
+fetch time 69 minutes, pack time 1 minutes
+
+Order 16  arrived at time 23
+fetch time 1 minutes, pack time 20 minutes
+
+Order 17  arrived at time 24
+fetch time 1 minutes, pack time 10 minutes
+
+Order 18  arrived at time 25
+fetch time 1 minutes, pack time 5 minutes
+
+Order 19  arrived at time 26
+fetch time 1 minutes, pack time 21 minutes
+
+Order 20  arrived at time 27
+fetch time 1 minutes, pack time 21 minutes
+
+Order 21  arrived at time 28
+fetch time 1 minutes, pack time 21 minutes
+
+Order 22  arrived at time 29
+fetch time 1 minutes, pack time 21 minutes
+
+Order 23  arrived at time 30
+fetch time 69 minutes, pack time 1 minutes
+
+Order 24  arrived at time 31
+fetch time 1 minutes, pack time 20 minutes
+
+Order 25  arrived at time 32
+fetch time 1 minutes, pack time 10 minutes
+
+Order 26  arrived at time 33
+fetch time 1 minutes, pack time 5 minutes
+
+Order 27  arrived at time 34
+fetch time 1 minutes, pack time 21 minutes
+
+Order 28  arrived at time 35
+fetch time 1 minutes, pack time 21 minutes
+
+Order 29  arrived at time 36
+fetch time 1 minutes, pack time 21 minutes
+
+Order 30  arrived at time 37
+fetch time 1 minutes, pack time 21 minutes

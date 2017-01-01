@@ -1,0 +1,14 @@
+<Order(1) arrival_timestamp = 0 fetch_duration = 5 pack_duration = 50 total_time = 55>
+<Order(2) arrival_timestamp = 1 fetch_duration = 5 pack_duration = 50 total_time = 59>
+<Order(3) arrival_timestamp = 2 fetch_duration = 5 pack_duration = 50 total_time = 63>
+<Order(4) arrival_timestamp = 3 fetch_duration = 5 pack_duration = 50 total_time = 102>
+<Order(5) arrival_timestamp = 4 fetch_duration = 5 pack_duration = 50 total_time = 106>
+<Order(134) arrival_timestamp = 1000 fetch_duration = 5 pack_duration = 3 total_time = 8>
+<Order(74) arrival_timestamp = 1009 fetch_duration = 3 pack_duration = 6 total_time = 9>
+<Order(97) arrival_timestamp = 1010 fetch_duration = 7 pack_duration = 43 total_time = 52>
+<Order(7) arrival_timestamp = 2001 fetch_duration = 3 pack_duration = 4 total_time = 96>
+<Order(6) arrival_timestamp = 2000 fetch_duration = 90 pack_duration = 9 total_time = 99>
+min elapsed time 8 minutes
+max elapsed time 106 minutes
+mean elapsed time 64 minutes
+10 orders processed

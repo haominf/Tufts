@@ -1,0 +1,83 @@
+Order 0 arrived at time 0
+fetch time 10 minutes, pack time 12 minutes
+
+Order 1 arrived at time 1
+fetch time 10 minutes, pack time 40 minutes
+
+Order 2 arrived at time 2
+fetch time 10 minutes, pack time 30 minutes
+
+Order 3 arrived at time 3
+fetch time 10 minutes, pack time 20 minutes
+
+Order 4 arrived at time 4
+fetch time 1 minutes, pack time 20 minutes
+
+Order 5 arrived at time 5
+fetch time 1 minutes, pack time 10 minutes
+
+Order 6 arrived at time 6
+fetch time 1 minutes, pack time 5 minutes
+
+Order 7 arrived at time 7
+fetch time 1 minutes, pack time 8 minutes
+
+Order 8 arrived at time 8
+fetch time 1 minutes, pack time 8 minutes
+
+Order 9 arrived at time 9
+fetch time 1 minutes, pack time 8 minutes
+
+Order 10 arrived at time 10
+fetch time 1 minutes, pack time 8 minutes
+
+Order 11 arrived at time 11
+fetch time 1 minutes, pack time 2 minutes
+
+Order 12 arrived at time 12
+fetch time 27 minutes, pack time 1 minutes
+
+Order 13 arrived at time 13
+fetch time 1 minutes, pack time 20 minutes
+
+Order 14 arrived at time 14
+fetch time 1 minutes, pack time 10 minutes
+
+Order 15 arrived at time 15
+fetch time 1 minutes, pack time 5 minutes
+
+Order 16 arrived at time 16
+fetch time 1 minutes, pack time 8 minutes
+
+Order 17 arrived at time 17
+fetch time 1 minutes, pack time 8 minutes
+
+Order 18 arrived at time 18
+fetch time 1 minutes, pack time 8 minutes
+
+Order 19 arrived at time 19
+fetch time 1 minutes, pack time 8 minutes
+
+Order 20 arrived at time 20
+fetch time 27 minutes, pack time 1 minutes
+
+Order 21 arrived at time 21
+fetch time 1 minutes, pack time 20 minutes
+
+Order 22 arrived at time 22
+fetch time 1 minutes, pack time 10 minutes
+
+Order 23 arrived at time 23
+fetch time 1 minutes, pack time 5 minutes
+
+Order 24 arrived at time 24
+fetch time 1 minutes, pack time 8 minutes
+
+Order 25 arrived at time 25
+fetch time 1 minutes, pack time 8 minutes
+
+Order 26 arrived at time 26
+fetch time 1 minutes, pack time 8 minutes
+
+Order 27 arrived at time 27
+fetch time 1 minutes, pack time 8 minutes

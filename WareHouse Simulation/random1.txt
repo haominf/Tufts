@@ -1,0 +1,15 @@
+Order 0 arrived at time 0
+fetch time 10 minutes, pack time 12 minutes
+
+Order 1 arrived at time 1
+fetch time 10 minutes, pack time 40 minutes
+
+Order 2 arrived at time 2
+fetch time 10 minutes, pack time 30 minutes
+
+Order 3 arrived at time 3
+fetch time 10 minutes, pack time 20 minutes
+
+Order 4 arrived at time 4
+fetch time 1 minutes, pack time 20 minutes
+

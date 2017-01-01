@@ -1,0 +1,98 @@
+COMP 15 PROJECT 1
+Name: Haomin Feng (hfeng03)
+Date: October 14 2016
+Acknowledgement: Matthew Chang (discussed the usage of "worker_timer" together)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~THIS IS A README FILE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Purpose of the program:
+    To simulate a real life problem of the operations of an order processing 
+    facility for a top online retailer, Nozama Online.
+    In the program, we have two main tasks listed below:
+    (1) Retrieving an order
+    (2) Packing an order
+    After processing all the order information, the program will print out 
+    the orders in the order they ship in a output file.
+
+Files Provided:
+    Parser.cpp
+        This is the implementation of Parser class declaration provided by Mark 
+        Sheldon.
+    string2int.cpp
+        This is the implementation of string2int() function provided by Mark
+        Sheldon.
+    Order.h
+        This is the header file of Order struct provided by Mark Sheldon.
+        (One element of int total_time is added by Haomin Feng)
+    Orderqueue.cpp  
+        This is the implementation of Orderqueue class. In Orderqueue class, a
+        dynamic sequence is created to store Order structs, aka an array of
+        Orders.
+    Retrieve.cpp
+        This is the implementation of Retrieve class. In Retrieve class, we can 
+        call functions from Orderqueue class to place an order in the retrieving
+        queue or remove an order if the fetcher is done fetching.
+    Packer.cpp
+        This is the implementation of Packer class. Similar to Retrieve class, 
+        we can call functions from Orderqueue class to place an order in the 
+        packing queue or remove an order if the packer is done packing.
+    Operation.cpp
+        This is the implementation of Operation class. Operation class acts as 
+        a controlling center. It keeps track of the time step and the 
+        workers available time (worker_timer) process order information, and 
+        then coordinate between Retrive class and Packer class to get the orders
+        done.
+    * and all above's headerfiles
+
+File Connections:
+    Parse, Order, Orderqueue, Retrieve, and Packer are all subsets of Operations
+    Orderqueue is subset of Retrieve and Packer
+    Order is subset of Orderqueue
+
+To compile and run:
+    Type "make" to compile
+    Type "./Nozama <filename> <num_packaging_units> <packer_mode>" to run
+    For example: ./Nozama input.txt 4 ROUND_ROBIN
+
+Algorithm:
+    This program has three main classes, they are Retrieve class, Packer class, 
+    and Operation class. Retrieve and Packer classes are used to help the 
+    Operation class.
+    In Operation run() function:
+        1. Parse the input file into order structs and place them into a
+        queue(use Orderqueue class) made by a dynamic array. 
+        
+        2. Now proceed to the while loop, which also means the system starts 
+        working and timing. The system clock will add 1 after every while loop.
+        When the system clock equals the order's arrival time, put the order 
+        into the retrieving unit (call func in Retrieve class).
+        
+        3. A timer of the worker also starts to count up the time while there is
+        an order in the retrieving unit. The timer starts from 0, and adds 1 
+        after every while loop to sychronize with the internal clock if the 
+        retrieving unit is not empty(aka the fetcher is dealing with the oder). 
+        When the timer adds up to the length of the order's fetch duration, it 
+        means the order is fecthed successfully. And at this moment, dequeue
+        the order from the retrieving unit(call func in Retrieve class).
+
+        3. Depending on the user input, put the order into the packing method
+        the order chooses (call func in Packer class)
+
+        3. After checking the retreiving unit, now it's time to check the 
+        packing units. Using similar approach, the timers, we can know when 
+        orders will be successfully packed. Since there are several packing
+        units, we can use a for loop to check each packing units.
+
+        4. Print out and store the result to the output file once a order is
+        finished. 
+
+        5. Enter the while loop agian until there are no more orders remaining
+        in the queues.
+        
+
+
+
+    
+        
+
+
