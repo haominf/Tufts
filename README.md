@@ -1,4 +1,4 @@
 # Tufts University
 # Computer Science Coursework
-# COMP 11
-# COMP 15
+# COMP 11 (Intro to CS)
+# COMP 15 (Data Structure)
